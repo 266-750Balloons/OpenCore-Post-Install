@@ -419,3 +419,6 @@ The main properties to verify are:
 * Correct UsbConnector property on your USB ports
 * Comment applied(if injected)
 * Unused ports were removed
+
+### Troubleshooting
+If it seems the USB map has not applied or has not applied for some controllers, make sure that the names of each USB controller under IOKitPersonalities in the kext's info.plist are long enough. Around 12 characters is a good general rule of thumb.
